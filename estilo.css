@@ -1,0 +1,278 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/12167747/pexels-photo-12167747.jpeg?_gl=1*i9d6dc*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTU4Mzg3NzEkbzIkZzEkdDE3NTU4Mzk0ODIkajQ4JGwwJGgw");
+    background-size: cover;
+    background-position: center -60px;
+    align-items: center;
+}
+
+#container-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-logo img{
+    width: 8rem;
+}
+
+#container-logo h1 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /*creado con chat gpt*/
+    font-weight: bold;
+    background: linear-gradient(90deg, green, white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    animation: moverBandera 5s infinite alternate linear;
+}
+
+#secciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#secciones a {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 1.25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+#secciones a:hover {
+    color: lightgreen;
+    text-shadow: 2px 2px 4px red;
+}
+
+#redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    background: linear-gradient(90deg, rgba(0,128,0,0.3) 10%, 
+    rgba(255,255,255,0.8) 50%,
+    rgba(255,0,0,0.3) 90%);
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#redes a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+#redes a:hover {
+    color: lightgreen;
+    text-shadow: 2px 2px 4px red;
+}
+
+#presentacion-platos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.platos {
+    background-size: cover;
+    min-height: 100vh;
+    max-height:max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.platos h2 {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 2rem;
+    text-decoration: underline;
+    /*creado con chat gpt*/
+    font-weight: bold;
+    background: linear-gradient(90deg, green, white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    animation: moverBandera 5s infinite alternate linear;
+}
+/*creado con chat gpt*/
+@keyframes moverBandera {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+#primer-plato {
+    background-image: url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?_gl=1*1muh8pk*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTU4Mzg3NzEkbzIkZzEkdDE3NTU4Mzg3ODMkajQ4JGwwJGgw");
+}
+
+#segundo-plato {
+    background-image: url("https://images.pexels.com/photos/19671313/pexels-photo-19671313.jpeg?_gl=1*r6fvzc*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTU4Mzg3NzEkbzIkZzEkdDE3NTU4Mzg5NTEkajQ4JGwwJGgw");
+}
+
+#dulce {
+    background-image: url("https://images.pexels.com/photos/3256807/pexels-photo-3256807.jpeg?_gl=1*hjdp2q*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTU4Mzg3NzEkbzIkZzEkdDE3NTU4Mzg4MTckajE0JGwwJGgw");
+}
+
+#tortas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#aperitivos {
+    background-image: url("https://images.pexels.com/photos/1721939/pexels-photo-1721939.jpeg?_gl=1*ts7t4e*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTU4Mzg3NzEkbzIkZzEkdDE3NTU4MzkwMTEkajQ4JGwwJGgw");
+}
+
+.detalle-platos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.detalle-platos h3 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1rem;
+    padding: 5px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 5px;
+}
+
+.detalle-platos p {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 5px;
+}
+
+.platos-dulces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.tortas {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 1rem;
+    background: linear-gradient(90deg, rgba(0,128,0,0.4) 10%, rgba(255,255,255,0.8) 50%, rgba(255,0,0,0.4) 90%);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(0,128,0,0.4) 10%, /* verde con 50% opacidad */
+    rgba(255,255,255,0.6) 50%, /* blanco con 50% opacidad */
+    rgba(255,0,0,0.4) 90%); /* rojo con 50% opacidad */
+    background-color: black;
+    padding: 0.5rem;
+}
+
+#redes-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33%;
+}
+
+
+
+#redes-footer a:hover {
+    color: lightgreen;
+    text-shadow: 2px 2px 4px red;
+}
+
+footer p {
+    margin: 0;
+    width: 33%;
+    color:whitesmoke;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    width: 33%;
+    text-align: center;
+ }
+
+#redes-footer a {
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    width: max-content;
+    text-align: center;
+}
+
+footer a:hover {
+    color: lightgreen;
+    text-shadow: 2px 2px 4px red;
+}
