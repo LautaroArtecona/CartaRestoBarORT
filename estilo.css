@@ -44,7 +44,7 @@ header {
     animation: moverBandera 5s infinite alternate linear;
 }
 
-#secciones {
+.secciones {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -52,7 +52,7 @@ header {
     justify-content: center;
 }
 
-#secciones a {
+.secciones a {
     font-family: "Nata Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -65,7 +65,7 @@ header {
     color: black;
 }
 
-#secciones a:hover {
+.secciones a:hover {
     color: lightgreen;
     text-shadow: 2px 2px 4px red;
 }
@@ -215,6 +215,91 @@ header {
     border-radius: 5px;
     padding: 5px;
 }
+
+/*estilos para el formulario de la reserva */
+
+#reservas {
+    background-image: url("https://images.pexels.com/photos/29251136/pexels-photo-29251136.jpeg?_gl=1*1ywfzf9*_ga*MTY3MjU0NTA5Ni4xNzU1NzMwNDY1*_ga_8JE65Q40S6*czE3NTY5NDk3MjgkbzMkZzEkdDE3NTY5NDk3NzMkajE1JGwwJGgw");
+}
+
+#reservas form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f582;
+    min-width: 50%;
+    margin-top: 1rem;
+    padding: 2rem 0 2rem 0;
+    border-radius: 10px;
+}
+
+.datos-entrada {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+
+.datos-entrada div {
+    width: 50%;
+    margin: 0 1rem 0 2rem;
+}
+
+    .datos-entrada input {
+        background: transparent;
+        border: none;
+        outline: none;
+        width: max-content;
+        text-align: start;
+        font-family: "Nata Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1rem;
+    }
+
+
+.datos-entrada label{
+    width: 50%;
+    text-align: end;
+    margin: 0 1rem 0 2rem;
+}
+
+.datos-entrada .input-datos {
+    border-bottom: 1px solid #000;
+    width: 80%;
+}
+
+.input-datos:focus {
+    border-bottom: 1px solid #aa0f0fda;
+}
+
+.datos-entrada button {
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 1rem;
+    padding: 4px 16px 4px 16px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.datos-entrada button:hover {
+    background: linear-gradient(90deg, rgba(0,128,0,0.4) 10%, rgba(255,255,255,0.8) 50%, rgba(255,0,0,0.4) 90%);
+}
+
+/* fin de los estilos del formulario */
 
 footer {
     font-family: "Nata Sans", sans-serif;

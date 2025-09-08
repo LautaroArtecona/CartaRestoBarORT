@@ -21,12 +21,15 @@
             <h1>Le paste del nonno</h1>
             <img src="images/bandera.png" alt="Alternate Text" />
         </div>
-        <nav id="secciones">
+        <nav class ="secciones">
             <a href="#primer-plato">Primi Piatti</a>
             <a href="#segundo-plato">Secondi Piatti</a>
             <a href="#dulce">Dolci</a>
             <a href="#aperitivos">Aperitivi</a>
         </nav>
+        <div class ="secciones">
+            <a href="#reservas">Effettua una prenotazione</a>
+        </div>
         <div id="redes"> 
             <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -139,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="platos" id="aperitivos">
@@ -171,6 +174,52 @@
             <div class="detalle-platos">
                 <h3>Aguas - Bebidas - Cervezas - Vino de la casa | <b>Consultar precio</b></h3>
             </div>
+        </div>
+
+
+        <div class="platos" id="reservas">
+            <h2>Riserve</h2>
+            <form action="/" method="post">
+                <div class="datos-entrada">
+                    <label for="nombre">Nombre completo:</label>
+                    <div>
+                        <input class="input-datos" type="text" id="nombre" name="nombre" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <label for="email">Correo electrónico:</label>
+                    <div>
+                        <input class="input-datos" type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <label for="adultos">Cant. adultos (2-8):</label>
+                    <div>
+                        <input type="number" id="adultos" name="adultos" min="2" max="8" value="2" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <label for="ninos">Cant. niños (0-4):</label>
+                    <div>
+                        <input type="number" id="ninos" name="ninos" min="0" max="4" value="0" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <label for="fecha">Fecha:</label>
+                    <div>
+                        <input type="date" id="fecha" name="fecha" min="2025-09-20" max="2025-10-05" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <label for="hora">Horario:</label>
+                    <div>
+                        <input type="time" id="hora" name="hora" min="21:00" max="23:00" step="900" required>
+                    </div>
+                </div>
+                <div class="datos-entrada">
+                    <button type="submit">Reservar</button>
+                </div>
+            </form>
         </div>
     </div>
 
