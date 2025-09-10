@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Keyboard&family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
     
+    
     <title>Carta RestoBar</title>
 </head>
 
@@ -179,7 +180,7 @@
 
         <div class="platos" id="reservas">
             <h2>Riserve</h2>
-            <form action="/" method="post">
+            <form action="/" method="post" id="registro">
                 <div class="datos-entrada">
                     <label for="nombre">Nombre completo:</label>
                     <div>
@@ -207,7 +208,7 @@
                 <div class="datos-entrada">
                     <label for="fecha">Fecha:</label>
                     <div>
-                        <input type="date" id="fecha" name="fecha" min="2025-09-20" max="2025-10-05" required>
+                        <input type="date" id="fecha" name="fecha" required>
                     </div>
                 </div>
                 <div class="datos-entrada">
@@ -233,5 +234,6 @@
         </div>
     </footer>
 
+    <script src="validaciones.js"></script>
 </body>
 </html>
